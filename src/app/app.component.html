@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<div class='jumbotron vertical-center'>
+  <div class="container text-center">
+    <div class="row" *ngIf='!selectedChoice'>
+      <div class="col-md-6">
+        <button class="btn btn-success" (click)='setChoice("X")'>Select <b style="color:blue;font-size: 18px;"> X </b> </button>
+      </div>
+      <div class="col-md-6">
+        <button class='btn btn-warning' (click)="setChoice('0')"> Select <b style="color:blue;font-size: 18px;"> O </b> </button>
+      </div>
+
+      <h2 class="text-alert" *ngIf="selectedChoice"> Selected Weapon of Choice : {{player.weapon}} </h2>
+       <h4 class='text-alert'>Player : <span class="score"> {{player.score}} </span> vs <span class="score red"> {{ai.score}}</span> : Ai </h4>
+
+       <div class="row">
+         <div class="col-lg-4 box" *ngFor='let b of boxes' (click)='boxClick(b.id)'>
+           {{b.co}}
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
