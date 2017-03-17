@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId:module.id,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
@@ -18,7 +19,7 @@ export class AppComponent {
     this.init();
   }
 
-  boxclick(n) {
+  boxClick(n:number) {
     if (this.player.weapon === '') {
       alert('Please select either X or O before the game');
       return;
