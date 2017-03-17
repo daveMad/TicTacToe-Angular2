@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
 
+## Update 2017-03-17
+
+I've written a short tutorial about this game. You can view it [here](https://davemad.github.io/angular/tic-tac-toe-in-angular.html)
+
 ## Running The Project
 
 Just download the project, make sure you have angular-cli installed globally then;
